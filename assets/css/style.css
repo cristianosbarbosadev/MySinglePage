@@ -1,0 +1,189 @@
+:root {
+  --background-color: #323232;
+  --font-color: #e1e1e1;
+}
+
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+  margin: 15px;
+}
+
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  font-size: .625rem;
+  color: var(--font-color);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+
+  transition: background-color 1s;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 90%;
+}
+
+
+.avatar{
+  height: 18.75rem;
+  margin-right: 25px;
+  border-radius: 1.5em;
+}
+
+.avatar-container .dark{
+  height: 18.75rem;
+  background-image: url("assets/img/darkAvatar.png");
+}
+
+
+.sobre h1 {
+  font-size: 4em;
+}
+
+.sobre div a{
+  font-size: 1.5em;
+}
+
+.redes-sociais {
+  margin: 1.25rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+.redes-sociais li {
+  background: var(--font-color);
+  height: 6.75em;
+  width: 6.75em;
+  border-radius: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  
+  transition: background-color 1s;
+}
+
+.redes-sociais li:hover {
+  transform: scale(1.05);
+  transition: .3s;
+}
+
+.redes-sociais ion-icon {
+  font-size: 4em;
+  color: var(--background-color);
+}
+
+
+
+/* Toggle */
+
+.switcher {
+  background-color: var(--font-color);
+
+  width: 4.375rem;
+  height: 2.5rem;
+  border-radius: 1.25rem;
+  padding: 0 .3125rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  transition: background-color 1s;
+}
+
+.switcher ion-icon {
+  font-size: 2.5em;
+  color: var(--background-color);
+}
+
+.switcher button {
+  background-color: var(--background-color);
+  width: 1.875rem;
+  height: 1.875rem;
+  border-radius: .9375rem;
+  border: none;
+
+  position: absolute;
+
+  transition: margin 1s;
+  cursor: pointer;
+}
+
+.light {
+  margin-left: 1.875rem;
+}
+
+footer {
+  height: 10%;
+  margin: .625rem 0;
+  display: flex;
+  align-items: end;
+}
+
+
+@media screen and (min-width: 48rem) {
+  main {
+    flex-direction: row;
+  }
+
+
+}
+
+@media screen and (min-width: 375px) {
+  body{
+    padding: .9375rem;
+  }
+    ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  li{
+    margin-right: .625rem;
+    margin-top: .625rem;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  body{
+    padding: .9375rem;
+  }
+    ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  li{
+    margin-right: .225rem;
+    margin-top: .225rem;
+  }
+
+  .sobre h1{
+    font-size: 3.5em;
+  }
+
+  
+}
