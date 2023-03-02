@@ -19,6 +19,11 @@ li {
 a {
   text-decoration: none;
   color: inherit;
+  
+}
+
+.sobre__descricao{
+  text-align: center;
 }
 
 body {
@@ -48,6 +53,7 @@ main {
 .avatar{
   height: 18.75rem;
   margin-right: 25px;
+  margin-top: 25px;
   border-radius: 1.5em;
 }
 
@@ -59,10 +65,12 @@ main {
 
 .sobre h1 {
   font-size: 4em;
+  text-align: center;
 }
 
 .sobre div a{
   font-size: 1.5em;
+  
 }
 
 .redes-sociais {
@@ -110,6 +118,10 @@ main {
   justify-content: space-between;
 
   transition: background-color 1s;
+
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
 }
 
 .switcher ion-icon {
@@ -142,7 +154,7 @@ footer {
 }
 
 
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   main {
     flex-direction: row;
   }
