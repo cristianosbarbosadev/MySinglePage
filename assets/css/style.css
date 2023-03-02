@@ -9,6 +9,13 @@
   box-sizing: border-box;
 }
 
+.legenda{
+  font-size: .950em;
+  text-align: center;
+  margin-top: .250rem;
+  color: var(--background-color);
+}
+
 li {
   list-style: none;
   margin: 15px;
